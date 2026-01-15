@@ -13,7 +13,7 @@ backend/            # FastAPI service
 frontend/           # Next.js 14 app router UI
   app/page.tsx
   package.json
-app.py              # Legacy Streamlit prototype (kept for reference)
+
 ```
 
 ## Quick start
@@ -21,7 +21,7 @@ app.py              # Legacy Streamlit prototype (kept for reference)
 ```bash
 cd backend
 python -m venv .venv
-source .venv/bin/activate
+.venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload --app-dir . --host 0.0.0.0 --port 8000
 ```
